@@ -1,0 +1,135 @@
+/* css variables for theming */
+:root {
+  --main-bg-color: rgb(255, 248, 231);
+  --main-font-color: rgb(0, 0, 0);
+  --theme-primary: rgb(254, 202, 27);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sriracha", cursive;
+  margin-bottom: 0.75em;
+}
+
+.card {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--theme-primary);
+  color: var(--main-font-color);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1,
+header h3 {
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters input[type="text"] {
+  font-size: 14px;
+  padding: 0.25rem;
+  margin: 0 1rem 0 0.25rem;
+}
+
+main {
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spice-item {
+  display: flex;
+}
+
+.spice-item .details {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.spice-item .favorite {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.spice-item .favorite:focus {
+  outline: none;
+}
+
+.spice-item .favorite span {
+  color: transparent;
+  text-shadow: 0 0 0 var(--theme-primary);
+}
+
+.spice-item .details p {
+  margin: 0.75rem 0;
+}
+
+.star-rating {
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.star-rating .foreground {
+  color: var(--theme-primary);
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.star-rating .background {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 0.5rem;
+}
+
+form button[type="submit"] {
+  width: 150px;
+}
