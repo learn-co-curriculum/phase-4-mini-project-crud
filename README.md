@@ -22,6 +22,8 @@ $ npm install --prefix client
 $ bundle install
 ```
 
+You should get the tests passing first by running `learn test`.
+
 ## Instructions
 
 ### Spice Model
@@ -63,20 +65,12 @@ JSON response body and HTTP status code. You can also run the server with
 Good luck! 💪
 
 Once your API is working, you can try out the full application in the browser
-when you're ready to see everything come together. You can run the Rails
-application in one terminal by running:
+when you're ready to see everything come together. Run both the Rails
+application and the React application together with:
 
-```console
-$ rails s
+```sh
+rails start
 ```
-
-Then, **open another terminal** and run React:
-
-```console
-$ npm start --prefix client
-```
-
-Each application will run on its own port on `localhost`:
 
 - React: [http://localhost:4000](http://localhost:4000)
 - Rails: [http://localhost:3000](http://localhost:3000)
