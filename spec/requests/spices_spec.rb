@@ -65,8 +65,8 @@ RSpec.describe "Spices", type: :request do
       expect { post '/spices', params: spice_params }.to change(Spice, :count).by(1)
     end
 
-    it 'returns the plant data' do
-      post '/spices', params: plant_params
+    it 'returns the spice data' do
+      post '/spices', params: spice_params
 
       expect(response.body).to include_json({
         id: a_kind_of(Integer),
@@ -79,7 +79,7 @@ RSpec.describe "Spices", type: :request do
     end
 
     it 'returns a status code of 201 (created)' do
-      post '/spices', params: plant_params
+      post '/spices', params: spice_params
 
       expect(response).to have_http_status(:created)
     end

@@ -45,7 +45,7 @@ Generate a class and migrations for a `Spice` model with the following attribute
 - `image` (string)
 - `description` (string)
 - `notes` (string)
-- `rating` (decimal)
+- `rating` (float)
 
 After you've created the model, check your work by running:
 
