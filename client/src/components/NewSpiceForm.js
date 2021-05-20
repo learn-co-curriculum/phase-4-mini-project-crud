@@ -65,10 +65,11 @@ function NewSpiceForm({ onAddSpice }) {
           value={formData.description}
           onChange={handleChange}
         />
-        <label htmlFor="rating">Description: </label>
+        <label htmlFor="rating">Rating: </label>
         <input
           type="number"
           id="rating"
+          max="5"
           value={formData.rating}
           onChange={handleChange}
         />
