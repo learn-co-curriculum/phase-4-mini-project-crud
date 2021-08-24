@@ -17,9 +17,9 @@ following RESTful conventions.
 
 To set up the frontend and backend dependencies, from the root directory, run:
 
-```sh
-npm install --prefix client
-bundle install
+```console
+$ npm install --prefix client
+$ bundle install
 ```
 
 You should get the tests passing first by running `learn test`.
@@ -38,8 +38,8 @@ Generate a class and migrations for a `Spice` model with the following attribute
 
 After you've created the model, check your work by running:
 
-```sh
-rails db:migrate db:seed
+```console
+$ rails db:migrate db:seed
 ```
 
 Then, use `rails c` to view data about the spices.
@@ -68,8 +68,8 @@ Once your API is working, you can try out the full application in the browser
 when you're ready to see everything come together. Run both the Rails
 application and the React application together with:
 
-```sh
-rails start
+```console
+$ rails start
 ```
 
 - React: [http://localhost:4000](http://localhost:4000)
