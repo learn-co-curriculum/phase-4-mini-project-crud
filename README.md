@@ -22,8 +22,6 @@ $ npm install --prefix client
 $ bundle install
 ```
 
-You should get the tests passing first by running `learn test`.
-
 ## Instructions
 
 ### Spice Model
