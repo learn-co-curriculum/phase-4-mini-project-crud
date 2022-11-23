@@ -1,2 +1,0 @@
-class Spice < ApplicationRecord
-end
