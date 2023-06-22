@@ -5,7 +5,7 @@ function SpiceItem({ spice, onUpdateSpice, onDeleteSpice }) {
 
   function handleUpdateRating(pct) {
     const newRating = pct * 5;
-    fetch(`/spices/${id}`, {
+    fetch(`/spices${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -17,7 +17,7 @@ function SpiceItem({ spice, onUpdateSpice, onDeleteSpice }) {
   }
 
   function handleDeleteSpice() {
-    fetch(`/spices/${id}`, {
+    fetch(`/spices${id}`, {
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {

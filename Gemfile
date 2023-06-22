@@ -39,3 +39,7 @@ group :test do
   gem 'rspec-json_expectations'
   gem 'shoulda-matchers', '~> 4.0'
 end
+
+gem "nokogiri", "~> 1.11"
+
+gem "rack-cors", "~> 2.0"

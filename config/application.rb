@@ -46,3 +46,4 @@ module Phase4MiniProjectCrud
     config.api_only = true
   end
 end
+
