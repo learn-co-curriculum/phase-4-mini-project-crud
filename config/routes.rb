@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :spices, only: [:index, :create]
+  resources :spices, only: [:index, :create, :update]
 end
