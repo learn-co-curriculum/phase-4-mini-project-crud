@@ -10,15 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_08_13_134834) do
+ActiveRecord::Schema.define(version: 2025_08_13_141848) do
 
   create_table "spices", force: :cascade do |t|
     t.string "title"
     t.string "image"
     t.string "description"
     t.string "notes"
-    t.string "rating"
-    t.string "float"
+    t.float "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
