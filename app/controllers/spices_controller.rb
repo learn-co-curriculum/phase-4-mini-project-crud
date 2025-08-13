@@ -10,6 +10,11 @@ class SpicesController < ApplicationController
     render json: spice
   end
 
+  def create 
+    spice = Spice.create(spice_params)
+    render json: spice
+  end
+
   def update
     spice = Spice.find_by(id: params[:id])
     spice.update(spice_params)
