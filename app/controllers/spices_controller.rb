@@ -1,4 +1,5 @@
 class SpicesController < ApplicationController
+  rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
   def index
     spices = Spice.all
@@ -36,4 +37,10 @@ class SpicesController < ApplicationController
   def spice_params
     params.permit(:title, :image, :description, :notes, :rating)
   end
+
+  def render_not_found_response
+    render json: { error: "Spice not found" }, status: not_found
+  end
+
+
 end
