@@ -9,4 +9,16 @@ class SpicesController < ApplicationController
     spice = Spice.find_by(id: params[:id])
     render json: spice
   end
+
+  def update
+    spice = Spice.find_by(id: params[:id])
+    spice.update(spice_params)
+    render json: spice
+  end
+
+  private
+
+  def spice_params
+    params.permit(:title, :image, :description, :notes, :rating)
+  end
 end
